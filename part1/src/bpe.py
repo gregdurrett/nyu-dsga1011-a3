@@ -87,6 +87,7 @@ class ASCIIBPETokenizer:
 
         Specifically, implement the following:
           1. Find the most frequent bigram B, and create a new token T for it.
+            Count bigrams with the provided `compute_bigram_statistics`.
             If two bigram have the same frequency, break tie by taking
             the lexicographically smaller bigram.
           2. Replace all occurrences of B in token_ids with T
